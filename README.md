@@ -7,7 +7,7 @@ Application Details:-
 5)Multithreading:- Coroutines
 6)RoomDb for local database
 7)Recyclerview for show list
-8)Viewbonding for less biolerplate code to access view element
+8)Viewbinding for less biolerplate code to access view element
 9)StateFlow for UI update
 10)Glide to load images.
 
