@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="act_background_color">#191414</color>
+    <color name="faded_text">#666666</color>
+    <color name="default_grey_btn_home">#282828</color>
+
+</resources>

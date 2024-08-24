@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+
+    <EditText
+        android:id="@+id/etvRequiredImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:hint="How many images do you want.?(1-10)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/faded_text" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etvRequiredImage"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDog"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:elevation="40dp"
+        app:cardBackgroundColor="@color/act_background_color"
+        app:cardCornerRadius="24dp">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/white"
+            android:indeterminateTintMode="src_in"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivDog"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvDog"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_shape"
+        android:enabled="false"
+        android:text="Previous"
+        android:textColor="@drawable/enable_btn_selector" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvDog"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_shape"
+        android:text="Next"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>
