@@ -9,7 +9,7 @@ import com.example.dogimagelibrary.IOModel.ImageModel
 class DogImageRepository(
     private val tableDAO: TableDAO, private val dogImageLibrary: DogImageLibrary
 ) {
-    private var currID: Int? = null
+     var currID: Int? = null
 
     suspend fun getImage(): DogTable {
         var imageModel = dogImageLibrary.getImage()
