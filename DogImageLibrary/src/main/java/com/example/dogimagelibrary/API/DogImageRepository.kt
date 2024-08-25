@@ -45,10 +45,12 @@ class DogImageRepository {
     }
 
     suspend fun getPreviousimage(): ImageModel? {
-        currIndex--;
-        if (currIndex < 0) return null
-        var temp = dogImagesList[currIndex]
-        return temp
+     if(currIndex>0)
+        {
+            currIndex--
+            return dogImagesList[currIndex]
+        }
+        return null
 
     }
 
