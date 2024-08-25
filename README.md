@@ -10,6 +10,7 @@ Application Details:-
 8)Viewbinding for less biolerplate code to access view element
 9)StateFlow for UI update
 10)Glide to load images.
+11)Junit/Mockito for testing AppRepository(DataSource app)
 
 LocalDatabase/DogImageLibrary---->Repository---->ViewModel----->Activity(View)
 
